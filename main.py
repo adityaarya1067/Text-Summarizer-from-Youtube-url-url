@@ -6,7 +6,7 @@ from langchain_community.document_loaders import YoutubeLoader,UnstructuredURLLo
 
 st.title('Langchain summarizer from Youtube URL or Website')
 
-groq_api_key="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"
+groq_api_key=st.sidebar.text_input("Enter your Groq API Key",type="password")
 
 url = st.text_input("URL",label_visibility="collapsed")
 
